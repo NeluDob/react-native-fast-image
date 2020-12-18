@@ -19,6 +19,7 @@
     self = [super init];
     self.resizeMode = RCTResizeModeCover;
     self.clipsToBounds = YES;
+    [self.layer setMagnificationFilter:kCAFilterNearest];
     return self;
 }
 
